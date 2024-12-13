@@ -63,13 +63,9 @@
         font-family: Tahoma;
       }
       
-      img.about{
-        float: left;
-        margin-right: 10px;
-      }
-      
-      p.about{
-        overflow: hidden;
+      p.contact{
+        font-family: Tahoma;
+        color: #000000;
       }
       
       .container {
@@ -78,6 +74,16 @@
         grid-template-columns: 30% 70%;
         column-gap: 20px;
         background-color: #78c8ee;
+      }
+      
+      .container2{
+        position: relative;
+        height: 300px;
+        background-image: url("pink.jpg");
+        background-size: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        
       }
       
       img.left {
@@ -102,7 +108,7 @@
         padding-left: 0px;
       }
       
-      #header {
+      .pinkHeader {
         height: 300px;
         background-image: url("pink.jpg");
         background-size: 100%;
@@ -110,15 +116,28 @@
         padding-left: 10px;
       }
       
-      #divider {
-        background-color: 
-        height: 100px;
-      } 
+      div.contact {
+        position: absolute;
+        height: 200px;
+        top: 50px;
+        left: 50px;
+        right: 50px;
+        bottom: 50px;
+        background: rgba(0, 0, 0, 0.3);
+        font-family: Verdana;
+        font-size: 20px;
+        text-align: center;
+        margin: auto;
+      }
+      
+      
+      
+      
     </style>
   </head>
   
   <body>
-    <div id="header">
+    <div id="header" class="pinkHeader">
       <a href="#Home">Home</a> &nbsp; | &nbsp;
       <a href="#Volunteer">Volunteer Experince</a> &nbsp; | &nbsp;
       <a href="#Projects">Projects</a> &nbsp; | &nbsp;
@@ -245,6 +264,21 @@ Developing new brand identities through logo design, packaging, brand revamp, an
         </p>
        </div>
        
+      </div>
+      <br>
+      <hr class="divider">
+      <br>
+
+      <div class="container2">
+        <div class="contact">
+          <p>
+            Contact Me
+          </p>
+          <p>
+            Looking forward 
+          </p>
+        </div>
+      
       </div>
         
   
